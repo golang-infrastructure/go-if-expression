@@ -4,6 +4,11 @@
 
 ![](.README_images/26e47025.png)
 
+安装：
+```text
+go get -u github.com/CC11001100/go-ternary-expression
+```
+
 # 二、Example
 
 下面是此库支持的所有操作速查表。
