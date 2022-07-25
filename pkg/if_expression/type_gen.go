@@ -5,7 +5,6 @@ package main
 
 import (
 	"bytes"
-	"fmt"
 	"go/format"
 	"io/ioutil"
 	"os"
@@ -64,9 +63,6 @@ func main() {
 		w.WriteString(data)
 		w.WriteString("\r\n")
 	}
-
-	fmt.Println(">>>>>")
-	fmt.Println(w.String())
 
 	out, err := format.Source(w.Bytes())
 	if err != nil {

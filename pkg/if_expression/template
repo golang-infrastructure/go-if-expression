@@ -28,7 +28,7 @@ func Return{{upper}}Slice(boolExpression bool, trueReturnValue, falseReturnValue
 	}
 }
 
-// Return{{Upper}}Pointer
+// Return{{upper}}Pointer
 //  @Description: if实现的三元表达式，返回结果是*{{lower}}
 //  @param boolExpression: 表达式，最终返回一个布尔值
 //  @param trueReturnValue: 当boolExpression返回值为true的时候返回的*{{lower}}

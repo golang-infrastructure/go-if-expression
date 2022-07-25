@@ -30,7 +30,7 @@ func ReturnBoolSlice(boolExpression bool, trueReturnValue, falseReturnValue []bo
 	}
 }
 
-// Return{{Upper}}Pointer
+// ReturnBoolPointer
 //  @Description: if实现的三元表达式，返回结果是*bool
 //  @param boolExpression: 表达式，最终返回一个布尔值
 //  @param trueReturnValue: 当boolExpression返回值为true的时候返回的*bool
@@ -86,7 +86,7 @@ func ReturnByteSlice(boolExpression bool, trueReturnValue, falseReturnValue []by
 	}
 }
 
-// Return{{Upper}}Pointer
+// ReturnBytePointer
 //  @Description: if实现的三元表达式，返回结果是*byte
 //  @param boolExpression: 表达式，最终返回一个布尔值
 //  @param trueReturnValue: 当boolExpression返回值为true的时候返回的*byte
@@ -142,7 +142,7 @@ func ReturnComplex64Slice(boolExpression bool, trueReturnValue, falseReturnValue
 	}
 }
 
-// Return{{Upper}}Pointer
+// ReturnComplex64Pointer
 //  @Description: if实现的三元表达式，返回结果是*complex64
 //  @param boolExpression: 表达式，最终返回一个布尔值
 //  @param trueReturnValue: 当boolExpression返回值为true的时候返回的*complex64
@@ -198,7 +198,7 @@ func ReturnComplex128Slice(boolExpression bool, trueReturnValue, falseReturnValu
 	}
 }
 
-// Return{{Upper}}Pointer
+// ReturnComplex128Pointer
 //  @Description: if实现的三元表达式，返回结果是*complex128
 //  @param boolExpression: 表达式，最终返回一个布尔值
 //  @param trueReturnValue: 当boolExpression返回值为true的时候返回的*complex128
@@ -254,7 +254,7 @@ func ReturnFloat32Slice(boolExpression bool, trueReturnValue, falseReturnValue [
 	}
 }
 
-// Return{{Upper}}Pointer
+// ReturnFloat32Pointer
 //  @Description: if实现的三元表达式，返回结果是*float32
 //  @param boolExpression: 表达式，最终返回一个布尔值
 //  @param trueReturnValue: 当boolExpression返回值为true的时候返回的*float32
@@ -310,7 +310,7 @@ func ReturnFloat64Slice(boolExpression bool, trueReturnValue, falseReturnValue [
 	}
 }
 
-// Return{{Upper}}Pointer
+// ReturnFloat64Pointer
 //  @Description: if实现的三元表达式，返回结果是*float64
 //  @param boolExpression: 表达式，最终返回一个布尔值
 //  @param trueReturnValue: 当boolExpression返回值为true的时候返回的*float64
@@ -366,7 +366,7 @@ func ReturnIntSlice(boolExpression bool, trueReturnValue, falseReturnValue []int
 	}
 }
 
-// Return{{Upper}}Pointer
+// ReturnIntPointer
 //  @Description: if实现的三元表达式，返回结果是*int
 //  @param boolExpression: 表达式，最终返回一个布尔值
 //  @param trueReturnValue: 当boolExpression返回值为true的时候返回的*int
@@ -422,7 +422,7 @@ func ReturnInt8Slice(boolExpression bool, trueReturnValue, falseReturnValue []in
 	}
 }
 
-// Return{{Upper}}Pointer
+// ReturnInt8Pointer
 //  @Description: if实现的三元表达式，返回结果是*int8
 //  @param boolExpression: 表达式，最终返回一个布尔值
 //  @param trueReturnValue: 当boolExpression返回值为true的时候返回的*int8
@@ -478,7 +478,7 @@ func ReturnInt16Slice(boolExpression bool, trueReturnValue, falseReturnValue []i
 	}
 }
 
-// Return{{Upper}}Pointer
+// ReturnInt16Pointer
 //  @Description: if实现的三元表达式，返回结果是*int16
 //  @param boolExpression: 表达式，最终返回一个布尔值
 //  @param trueReturnValue: 当boolExpression返回值为true的时候返回的*int16
@@ -534,7 +534,7 @@ func ReturnInt32Slice(boolExpression bool, trueReturnValue, falseReturnValue []i
 	}
 }
 
-// Return{{Upper}}Pointer
+// ReturnInt32Pointer
 //  @Description: if实现的三元表达式，返回结果是*int32
 //  @param boolExpression: 表达式，最终返回一个布尔值
 //  @param trueReturnValue: 当boolExpression返回值为true的时候返回的*int32
@@ -590,7 +590,7 @@ func ReturnInt64Slice(boolExpression bool, trueReturnValue, falseReturnValue []i
 	}
 }
 
-// Return{{Upper}}Pointer
+// ReturnInt64Pointer
 //  @Description: if实现的三元表达式，返回结果是*int64
 //  @param boolExpression: 表达式，最终返回一个布尔值
 //  @param trueReturnValue: 当boolExpression返回值为true的时候返回的*int64
@@ -646,7 +646,7 @@ func ReturnRuneSlice(boolExpression bool, trueReturnValue, falseReturnValue []ru
 	}
 }
 
-// Return{{Upper}}Pointer
+// ReturnRunePointer
 //  @Description: if实现的三元表达式，返回结果是*rune
 //  @param boolExpression: 表达式，最终返回一个布尔值
 //  @param trueReturnValue: 当boolExpression返回值为true的时候返回的*rune
@@ -702,7 +702,7 @@ func ReturnStringSlice(boolExpression bool, trueReturnValue, falseReturnValue []
 	}
 }
 
-// Return{{Upper}}Pointer
+// ReturnStringPointer
 //  @Description: if实现的三元表达式，返回结果是*string
 //  @param boolExpression: 表达式，最终返回一个布尔值
 //  @param trueReturnValue: 当boolExpression返回值为true的时候返回的*string
@@ -758,7 +758,7 @@ func ReturnUintSlice(boolExpression bool, trueReturnValue, falseReturnValue []ui
 	}
 }
 
-// Return{{Upper}}Pointer
+// ReturnUintPointer
 //  @Description: if实现的三元表达式，返回结果是*uint
 //  @param boolExpression: 表达式，最终返回一个布尔值
 //  @param trueReturnValue: 当boolExpression返回值为true的时候返回的*uint
@@ -814,7 +814,7 @@ func ReturnUint8Slice(boolExpression bool, trueReturnValue, falseReturnValue []u
 	}
 }
 
-// Return{{Upper}}Pointer
+// ReturnUint8Pointer
 //  @Description: if实现的三元表达式，返回结果是*uint8
 //  @param boolExpression: 表达式，最终返回一个布尔值
 //  @param trueReturnValue: 当boolExpression返回值为true的时候返回的*uint8
@@ -870,7 +870,7 @@ func ReturnUint16Slice(boolExpression bool, trueReturnValue, falseReturnValue []
 	}
 }
 
-// Return{{Upper}}Pointer
+// ReturnUint16Pointer
 //  @Description: if实现的三元表达式，返回结果是*uint16
 //  @param boolExpression: 表达式，最终返回一个布尔值
 //  @param trueReturnValue: 当boolExpression返回值为true的时候返回的*uint16
@@ -926,7 +926,7 @@ func ReturnUint32Slice(boolExpression bool, trueReturnValue, falseReturnValue []
 	}
 }
 
-// Return{{Upper}}Pointer
+// ReturnUint32Pointer
 //  @Description: if实现的三元表达式，返回结果是*uint32
 //  @param boolExpression: 表达式，最终返回一个布尔值
 //  @param trueReturnValue: 当boolExpression返回值为true的时候返回的*uint32
@@ -982,7 +982,7 @@ func ReturnUint64Slice(boolExpression bool, trueReturnValue, falseReturnValue []
 	}
 }
 
-// Return{{Upper}}Pointer
+// ReturnUint64Pointer
 //  @Description: if实现的三元表达式，返回结果是*uint64
 //  @param boolExpression: 表达式，最终返回一个布尔值
 //  @param trueReturnValue: 当boolExpression返回值为true的时候返回的*uint64
@@ -1038,7 +1038,7 @@ func ReturnUintptrSlice(boolExpression bool, trueReturnValue, falseReturnValue [
 	}
 }
 
-// Return{{Upper}}Pointer
+// ReturnUintptrPointer
 //  @Description: if实现的三元表达式，返回结果是*uintptr
 //  @param boolExpression: 表达式，最终返回一个布尔值
 //  @param trueReturnValue: 当boolExpression返回值为true的时候返回的*uintptr
@@ -1094,7 +1094,7 @@ func ReturnInterfaceSlice(boolExpression bool, trueReturnValue, falseReturnValue
 	}
 }
 
-// Return{{Upper}}Pointer
+// ReturnInterfacePointer
 //  @Description: if实现的三元表达式，返回结果是*interface{}
 //  @param boolExpression: 表达式，最终返回一个布尔值
 //  @param trueReturnValue: 当boolExpression返回值为true的时候返回的*interface{}
@@ -1150,7 +1150,7 @@ func ReturnTimeSlice(boolExpression bool, trueReturnValue, falseReturnValue []ti
 	}
 }
 
-// Return{{Upper}}Pointer
+// ReturnTimePointer
 //  @Description: if实现的三元表达式，返回结果是*time.Time
 //  @param boolExpression: 表达式，最终返回一个布尔值
 //  @param trueReturnValue: 当boolExpression返回值为true的时候返回的*time.Time
@@ -1206,7 +1206,7 @@ func ReturnDurationSlice(boolExpression bool, trueReturnValue, falseReturnValue 
 	}
 }
 
-// Return{{Upper}}Pointer
+// ReturnDurationPointer
 //  @Description: if实现的三元表达式，返回结果是*time.Duration
 //  @param boolExpression: 表达式，最终返回一个布尔值
 //  @param trueReturnValue: 当boolExpression返回值为true的时候返回的*time.Duration
