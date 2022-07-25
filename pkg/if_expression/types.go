@@ -1,5 +1,61 @@
 package if_expression
 
+// ReturnBool
+//  @Description: if实现的三元表达式，返回结果是bool
+//  @param boolExpression: 表达式，最终返回一个布尔值
+//  @param trueReturnValue: 当boolExpression返回值为true的时候返回的bool
+//  @param falseReturnValue: 当boolExpression返回值为false的时候返回的bool
+//  @return bool: 三元表达式的结果，为trueReturnValue或者falseReturnValue中的一个
+func ReturnBool(boolExpression bool, trueReturnValue, falseReturnValue bool) bool {
+	if boolExpression {
+		return trueReturnValue
+	} else {
+		return falseReturnValue
+	}
+}
+
+// ReturnBoolSlice
+//  @Description: if实现的三元表达式，返回结果是[]bool
+//  @param boolExpression: 表达式，最终返回一个布尔值
+//  @param trueReturnValue: 当boolExpression返回值为true的时候返回的[]bool
+//  @param falseReturnValue: 当boolExpression返回值为false的时候返回的[]bool
+//  @return []bool: 三元表达式的结果，为trueReturnValue或者falseReturnValue中的一个
+func ReturnBoolSlice(boolExpression bool, trueReturnValue, falseReturnValue []bool) []bool {
+	if boolExpression {
+		return trueReturnValue
+	} else {
+		return falseReturnValue
+	}
+}
+
+// ReturnBoolPointer
+//  @Description: if实现的三元表达式，返回结果是*bool
+//  @param boolExpression: 表达式，最终返回一个布尔值
+//  @param trueReturnValue: 当boolExpression返回值为true的时候返回的*bool
+//  @param falseReturnValue: 当boolExpression返回值为false的时候返回的*bool
+//  @return *bool: 三元表达式的结果，为trueReturnValue或者falseReturnValue中的一个
+func ReturnBoolPointer(boolExpression bool, trueReturnValue, falseReturnValue *bool) *bool {
+	if boolExpression {
+		return trueReturnValue
+	} else {
+		return falseReturnValue
+	}
+}
+
+// ReturnBoolPointerSlice
+//  @Description: if实现的三元表达式，返回结果是[]*bool
+//  @param boolExpression: 表达式，最终返回一个布尔值
+//  @param trueReturnValue: 当boolExpression返回值为true的时候返回的[]*bool
+//  @param falseReturnValue: 当boolExpression返回值为false的时候返回的[]*bool
+//  @return []*bool: 三元表达式的结果，为trueReturnValue或者falseReturnValue中的一个
+func ReturnBoolPointerSlice(boolExpression bool, trueReturnValue, falseReturnValue []*bool) []*bool {
+	if boolExpression {
+		return trueReturnValue
+	} else {
+		return falseReturnValue
+	}
+}
+
 // ReturnByte
 //  @Description: if实现的三元表达式，返回结果是byte
 //  @param boolExpression: 表达式，最终返回一个布尔值

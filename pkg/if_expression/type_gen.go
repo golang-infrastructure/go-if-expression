@@ -27,7 +27,7 @@ func main() {
 	start_pos := strings.Index(string(filedata), packageName)
 	w.WriteString(string(filedata)[start_pos : start_pos+len(packageName)])
 
-	ts := []string{"Byte", "Complex64", "Complex128", "Float32", "Float64", "Int", "Int8", "Int16", "Int32", "Rune", "String", "Uint", "Uint8", "Uint16", "Uint32", "Uint64", "Uintptr"}
+	ts := []string{"Bool", "Byte", "Complex64", "Complex128", "Float32", "Float64", "Int", "Int8", "Int16", "Int32", "Rune", "String", "Uint", "Uint8", "Uint16", "Uint32", "Uint64", "Uintptr"}
 
 	for _, upper := range ts {
 		lower := strings.ToLower(upper)
