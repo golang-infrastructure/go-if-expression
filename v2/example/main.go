@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	if_expression "github.com/golang-infrastructure/go-if-expression/v2"
+	"github.com/golang-infrastructure/go-if-expression/v2/if_expression"
 )
 
 func main() {
