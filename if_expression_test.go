@@ -16,3 +16,11 @@ func ExampleReturn() {
 	// Output:
 	// 是
 }
+
+func TestMap(t *testing.T) {
+	m := map[string]interface{}{
+		"foo": "bar",
+	}
+	//t.Log(m["bad"])    // nil
+	t.Log(Return(m["bad"] != nil, m["bad"], "aaa")) // ⚠️ 范型传nil进来就panic了.
+}

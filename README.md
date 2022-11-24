@@ -5,6 +5,33 @@
 Golang中缺少三元表达式，就导致某些情况三元表达式一行就能搞定的事情到Golang里面就得写得很啰嗦，
 这是无法忍受的，~~这个库就是借助大量自定义的if函数来实现类似三元表达式的功能~~，最新版本是基于泛型实现的。
 
+使用此库之前：
+
+```go
+if a % 2 == 0 {
+    return "偶数"
+} else {
+    return "奇数"
+}
+```
+
+使用此库之后：
+
+```go
+return if_expression.Return(a % 2 == 0, "偶数", "奇数")
+```
+
+对比：
+
+```diff
+- if a % 2 == 0 {
+- 	return "偶数"
+- } else {
+- 	return "奇数"
+- }
++ return if_expression.Return(a % 2 == 0, "偶数", "奇数")
+```
+
 ## 二、引入依赖
 
 go get安装：
