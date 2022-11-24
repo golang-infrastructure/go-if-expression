@@ -17,10 +17,13 @@ func ExampleReturn() {
 	// 是
 }
 
-func TestMap(t *testing.T) {
-	m := map[string]interface{}{
-		"foo": "bar",
-	}
-	//t.Log(m["bad"])    // nil
-	t.Log(Return(m["bad"] != nil, m["bad"], "aaa")) // ⚠️ 范型传nil进来就panic了.
-}
+//func TestMap(t *testing.T) {
+//	m := map[string]interface{}{
+//		"foo": "bar",
+//	}
+//	m["bar"] = "aaa"
+//	//t.Log(m["bad"])    // nil
+//	var v string
+//	v = Return[string](m["bad"] == nil, m["bar"], "aaa")  //  m["bar"]的类型不对
+//	t.Log(v)
+//}
