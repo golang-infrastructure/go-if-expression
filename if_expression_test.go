@@ -27,3 +27,12 @@ func ExampleReturn() {
 //	v = Return[string](m["bad"] == nil, m["bar"], "aaa")  //  m["bar"]的类型不对
 //	t.Log(v)
 //}
+
+func TestReturnByFunc(t *testing.T) {
+	r := ReturnByFunc[string](true, func() string {
+		return "是"
+	}, func() string {
+		return "否"
+	})
+	fmt.Println(r)
+}
