@@ -1,5 +1,7 @@
 # Golang's ternary expression implementation
 
+[中文文档](./README.md) | [English Document](./README_en.md)
+
 # 1. The original intention of development
 
 The lack of ternary expressions in Golang has led to the fact that in some cases, things that can be done in one line with ternary expressions have to be written very verbosely in Golang.
