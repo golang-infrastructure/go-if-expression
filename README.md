@@ -1,5 +1,7 @@
 # Golang的三元表达式实现
 
+[中文文档](./README.md) | [English Document](./README_en.md)
+
 # 一、开发初衷
 
 Golang中缺少三元表达式，就导致某些情况三元表达式一行就能搞定的事情到Golang里面就得写得很啰嗦，
