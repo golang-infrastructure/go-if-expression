@@ -59,6 +59,21 @@ func Return[T any](boolExpression bool, trueReturnValue, falseReturnValue T) T {
 		return falseReturnValue
 	}
 }
+
+// ReturnByFunc
+//
+//	@Description: if实现的三元表达式
+//	@param boolExpression: 布尔表达式，最终返回一个布尔值
+//	@param trueReturnValue: 当boolExpression返回值为true的时候执行此函数并返回值
+//	@param falseReturnValue: 当boolExpression返回值为false的时候执行此函数并返回值
+//	@return bool: 三元表达式的结果，为trueReturnValue或者falseReturnValue中的一个
+func ReturnByFunc[T any](boolExpression bool, trueFuncForReturnValue, falseFuncForReturnValue func() T) T {
+	if boolExpression {
+		return trueFuncForReturnValue()
+	} else {
+		return falseFuncForReturnValue()
+	}
+}
 ```
 
 # 三、 Example
@@ -89,5 +104,32 @@ func main() {
 
 }
 
+```
+
+或者使用函数进行返回，仅有被命中分支的函数才会得到执行，不过这种方式并不简洁并不建议使用：
+
+```go
+package main
+
+import (
+	"fmt"
+	if_expression "github.com/golang-infrastructure/go-if-expression"
+)
+
+func main() {
+
+	r := if_expression.ReturnByFunc(true, func() string {
+		fmt.Println("True分支被执行了")
+		return "是"
+	}, func() string {
+		fmt.Println("False分支被执行了")
+		return "否"
+	})
+	fmt.Println(r)
+	// Output:
+	// True分支被执行了
+	// 是
+
+}
 ```
 
